@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media only screen and (max-width:1024px){
+  header .nav-btn{
+    visibility:visible;
+    opacity:1;
+  }
+  header nav{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    transition: 1s;
+  }
+  header .resposive_nav{
+    transform:none;
+  }
+
+  nav .nav-close-btn{
+    position:absolute;
+    top:2rem;
+    right:2rem;
+  }
+}
+  
+
+
+.App-header {
+  background-color: #39455e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+container {
+       margin-left: 60px;
+        border: 50px yellowgreen;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        padding: 50px;
+}
+
+:root {
+  --mainColor:#282c34;
+  --mainColorLight:#282c20;
+  --textColor:beige;
+
+}
+
+header {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  height:80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+nav a{
+  margin:0 2rem;
+  color: var(--textColor);
+}
+
+nav a:hover {
+  color:darkblue;
+}
+
+header .nav-btn {
+  padding:5px;
+  cursor:pointer;
+  background: transparent;
+  color: var(--textColor);
+  visibility:hidden;
+  opacity:0;
+}
+
